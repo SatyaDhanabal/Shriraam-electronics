@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHRIRAAM ELECTRONICS - Inverter, Battery, RO, Solar Services</title>
+  <meta name="description" content="SHRIRAAM ELECTRONICS offers expert repair and installation services for inverters, batteries, solar power systems, and RO water purifiers in [Your City/Region] since 1991.">
+  <style>
+    /* Basic Reset & Typography */
+    body {
+      font-family: 'Inter', sans-serif; /* Using Inter font as suggested */
+      margin: 0;
+      padding: 0;
+      color: #333;
+      /* Subtle background pattern for the entire body */
+      background-color: #f7f9fc; /* Fallback color */
+      background-image: url('https://www.transparenttextures.com/patterns/clean-textile.png'); /* Subtle texture */
+      background-repeat: repeat;
+      background-attachment: fixed; /* Keeps background fixed when scrolling */
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #004466;
+      color: white;
+      padding: 20px 25px; /* Adjusted padding for better mobile view */
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      justify-content: space-between;
+      align-items: center;
+      border-bottom-left-radius: 10px; /* Rounded corners */
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Added shadow for header */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px; /* Slightly larger for prominence */
+      border-radius: 5px; /* Rounded corners for the title */
+    }
+
+    header h1 a { /* Style for the clickable title (Home link) */
+      color: white;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: block; /* Make the whole area clickable */
+    }
+
+    /* Navigation Styling */
+    nav {
+      margin-top: 10px; /* Add some space on smaller screens */
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px; /* Increased margin for better spacing */
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px; /* Padding for better click/tap area */
+      border-radius: 5px; /* Rounded corners for nav links */
+      transition: background-color 0.3s ease; /* Smooth transition on hover */
+    }
+
+    nav a:hover, nav a:focus {
+      background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    }
+
+    /* Hero Section */
+    .hero {
+      /* Thematic background image for the hero section */
+      background: linear-gradient(rgba(0, 68, 102, 0.6), rgba(0, 68, 102, 0.6)), /* Dark overlay for text readability */
+                   url('https://placehold.co/1200x400/004466/FFFFFF?text=Modern+Electronics+Service') no-repeat center center;
+      background-size: cover;
+      height: 300px; /* Increased height for better visual impact */
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      justify-content: center;
+      color: white; /* Changed text color to white for better contrast with dark background */
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* Stronger text shadow */
+      text-align: center;
+      padding: 20px; /* Add padding for content inside hero */
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-top: 20px; /* Space below header */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero h2 {
+      font-size: 48px; /* Slightly adjusted font size */
+      margin-bottom: 25px; /* Space below motto */
+    }
+
+    /* Call to Action Button (removed functionality, kept for visual) */
+    .cta-button {
+      background-color: #ff8c00; /* Vibrant orange */
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 8px; /* More rounded corners */
+      font-size: 20px;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
+    }
+
+    .cta-button:hover, .cta-button:focus {
+      background-color: #e67e00; /* Darker orange on hover */
+      transform: translateY(-2px); /* Slight lift effect */
+    }
+
+    /* Section General Styling */
+    .section {
+      padding: 40px 20px; /* More padding for sections */
+      max-width: 1000px;
+      margin: auto;
+      border-radius: 10px; /* Rounded corners for sections */
+      margin-top: 20px; /* Space between sections */
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Light shadow for sections */
+      background-color: white; /* Ensure sections have a solid background */
+    }
+
+    /* Services Section Specifics */
+    #services {
+      background-color: #f0f8ff; /* Light azure background for entire section */
+      padding: 50px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .service-box {
+      padding: 25px; /* Increased padding */
+      border-radius: 12px; /* More rounded corners */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+      color: #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover */
+      background-color: #e0f2f7; /* Unified light blue background for all service boxes */
+    }
+
+    .service-box:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+
+    /* Removed individual background colors for service boxes */
+    /* .battery-inverter { background-color: #d1e7dd; } */
+    /* .ro-services { background-color: #cff4fc; } */
+    /* .solar-implementation { background-color: #ffe5d9; } */
+
+    .solar-implementation {
+      grid-column: 1 / -1; /* Make it span full width on larger screens */
+      max-width: 600px;
+      justify-self: center;
+    }
+
+    .service-box h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #004466; /* Darker blue for headings */
+    }
+
+    .service-box ul {
+      list-style: disc; /* Use disc for bullet points */
+      margin-left: 20px;
+      padding: 0;
+    }
+
+    .service-box li {
+      margin-bottom: 5px;
+    }
+
+    /* Styling for the new maintenance offer section */
+    .maintenance-offer {
+      background-color: #d4edda; /* Light green background */
+      color: #155724; /* Dark green text */
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 30px; /* Space above this section */
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Styling for the new student project section */
+    .student-projects {
+      background-color: #e6f7ff; /* Light blue background */
+      color: #004085; /* Dark blue text */
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 30px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .student-projects h3 {
+      color: #004466;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .student-projects p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #002233;
+      color: white;
+      text-align: center;
+      padding: 25px 20px; /* More padding */
+      margin-top: 40px; /* More space above footer */
+      border-top-left-radius: 10px; /* Rounded corners */
+      border-top-right-radius: 10px;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.2); /* Added shadow for footer */
+    }
+
+    .contact-info {
+      margin-top: 15px;
+      font-size: 15px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+      }
+      nav a {
+        margin: 0 10px 10px 10px; /* Adjust spacing for mobile nav */
+        display: inline-block;
+      }
+      .hero h2 {
+        font-size: 36px;
+      }
+      .service-box {
+        padding: 20px; /* Adjust padding for smaller screens */
+      }
+      #founder div {
+        padding: 20px;
+      }
+      #founder img {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .services-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+      }
+      .solar-implementation {
+        max-width: 100%;
+        justify-self: stretch;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 24px;
+      }
+      .hero h2 {
+        font-size: 28px;
+      }
+      .cta-button {
+        padding: 12px 25px;
+        font-size: 18px;
+      }
+      .section {
+        padding: 25px 15px;
+      }
+      input, textarea, button {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="#top">SHRIRAAM ELECTRONICS</a></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      </nav>
+  </header>
+
+  <section id="founder" class="section">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+      <div style="flex: 1; min-width: 300px; max-width: 600px;">
+        <h2 style="font-size: 2rem; margin-bottom: 20px; color: #004466;">Founder</h2>
+        <p style="margin-bottom: 16px; line-height: 1.8;">
+          I am <strong>S. Dhanabal</strong>, a B.E. graduate in Electrical and Electronics Engineering. With deep technical knowledge and a keen interest in this field, I have been running this service business since <strong>1991</strong>.
+        </p>
+        <p style="margin-bottom: 16px; line-height: 1.8;">
+          Over the years, I have proudly served more than <strong>800+ satisfied customers</strong>, providing reliable solutions for inverters, batteries, and RO systems.
+        </p>
+        <p style="margin-bottom: 16px; line-height: 1.8;">
+          I believe in building lasting relationships through trust, quality service, and customer satisfaction. My goal has always been to deliver prompt support and ensure peace of mind for every customer we serve.
+        </p>
+      </div>
+
+      <div style="flex: 1; min-width: 250px; text-align: center;">
+        <img src="dhans image.jpg" alt="Founder Image" style="max-width: 80%; height: auto; border-radius: 12px;">
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <h2>"Committed to Powering Progress"</h2>
+    <a href="#" class="cta-button">Learn More</a>
+  </section>
+
+  <section class="section" id="about">
+    <h2 style="text-align: left; font-size: 28px; margin-bottom: 20px; color: #004466;">About Us</h2>
+    <p style="font-size: 18px; line-height: 1.8;">
+      <strong>Shriraam Electronics</strong> is a trusted service provider specializing in <strong>inverters, batteries, solar power systems, and RO water purifiers</strong>. Established in <strong>1991</strong>, we have built a strong foundation based on technical excellence, reliability, and customer satisfaction.
+    </p>
+    <p style="font-size: 18px; line-height: 1.8;">
+      With over <strong>800+ happy customers</strong>, our services are known for prompt support, genuine products, and long-lasting performance. We aim to provide peace of mind and continuous power to homes and businesses through smart energy solutions.
+    </p>
+    <p style="font-size: 18px; line-height: 1.8;">
+      Our motto, <em>"Committed to Powering Progress"</em>, reflects our vision to move forward with innovation, trust, and consistent service - empowering every customer we serve.
+    </p>
+    <p style="font-size: 18px; line-height: 1.8; margin-top: 20px;">
+      <strong style="color: #004466;">Service Area:</strong> We proudly serve customers across Tiruchirapalli and are committed to assisting clients in other districts. Simply contact us, and we will connect you with our trusted engineers or partner companies for installation and setup, ensuring you receive the best service wherever you are.
+    </p>
+  </section>
+
+  <section class="section" id="services">
+    <h2 style="text-align: center; margin-bottom: 30px; color: #004466;">Our Services</h2>
+    <div class="services-container">
+      <div class="service-box battery-inverter">
+        <h3>Battery & Inverter Services</h3>
+        <p>We provide top-quality battery and inverter brands with expert installation, reliable repair, and comprehensive maintenance support, ensuring uninterrupted power for your home or business.</p>
+        <p><strong>Brands we offer:</strong></p>
+        <ul>
+          <li>Exide</li>
+          <li>Amaron</li>
+          <li>SF Sonic</li>
+          <li>Microtek</li>
+          <li>Luminous</li>
+        </ul>
+      </div>
+
+      <div class="service-box ro-services">
+        <h3>RO Services</h3>
+        <p>We offer professional RO system installation, thorough servicing, and genuine spare parts for leading brands, guaranteeing clean and safe drinking water.</p>
+        <p><strong>Brands we offer:</strong></p>
+        <ul>
+          <li>Dolphin</li>
+          <li>Aquaguard</li>
+          <li>Wallmount</li>
+        </ul>
+      </div>
+
+      <div class="service-box solar-implementation">
+        <h3>Solar Plant Implementation</h3>
+        <p>Complete design and installation services for efficient solar power plants tailored to your home or business needs. Embrace sustainable energy with our expert solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section maintenance-offer">
+    <p>As a special offer, we provide **2 times free maintenance** for your Battery and RO systems within the first year of installation!</p>
+  </section>
+
+  ---
+  <section class="section student-projects">
+    <h3>Student Project Opportunities for ECE & EEE</h3>
+    <p>
+      Are you a student from the **Electronics and Communication Engineering (ECE)** or **Electrical and Electronics Engineering (EEE)** department looking for hands-on project experience?
+    </p>
+    <p>
+      At Shriraam Electronics, we offer **project opportunities** for students with **nominal fees**, or we can facilitate projects that align with our expertise. You can contact us to discuss your project ideas and verify whether it can be done by us.
+    </p>
+    <p>
+      **Get in touch to bring your innovative ideas to life!**
+    </p>
+  </section>
+  ---
+
+  <footer>
+    <p>&copy; 2025 Shriraam Electronics. All rights reserved.</p>
+    <div class="contact-info">
+      <p><strong>Contact Us:</strong></p>
+      <p>Phone: <a href="tel:+919842653356">+91 9842653356</a></p>
+      <p>Phone: <a href="tel:+919585353356">+91 9585353356</a></p>
+      <p>Email: <a href="mailto:sdhanstry@gmail.com">sdhanstry@gmail.com</a></p>
+      <p>Address: [Your Full Business Address, City, State, Pincode]</p>
+    </div>
+  </footer>
+
+</body>
+</html>
